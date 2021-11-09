@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/CSS" href="CSS/practica1.css">
+<script type="text/javascript" src="JS/practica1.js"></script>
+
+	<title>Practica 1</title>
+</head>
+<h1 style="color:#FF0000" id="mnProducto"><i><b>Menu registro de juguetes</b></i></h1>
+
+
+<body>
+	
+
+<div id="estado1" style="display: none;"> </div> 
+<div id="tabla" > </div> 
+
+<form id="frm" name="frm">
+
+	<label  id="lbModelo" for="modelo">Modelo:</label>
+<input type="text"id="modelo" name="modelo"  >
+
+
+	<label id="lbArticulo" for="articulo">Articulo:</label>
+<input type="text"id="articulo" name="articulo">
+
+	<label  id="lbMarca" for="marca">Marca:</label>
+<select  id="marca" name="marca">
+  <option value="Hasbro">Hasbro</option>
+  <option value="Mattel" >Mattel</option>
+
+</select>
+
+
+<label id="lbExistencia" for="existencia">Existencia:</label>
+<input type="number"id="existencia" name="existencia">
+
+
+<label  id="lbCosto" for="costo">Costo:</label>
+<input type="number"id="costo" name="costo">
+
+
+
+
+<label id="lbIVA" for="iva">IVA:</label>
+<input type="number"id="iva" name="iva">
+</form>
+
+
+
+<br><br><br><br>
+
+
+<button type="button" id="btnCancelar" onclick="cancelar(this.form); ">Cancelar</button>
+<button type="button" form="frm" id="btnAgregar" onclick="addJuguete(this.form); ">Agregar</button>
+<button type="button" id="btnActualizar">Actualizar</button>
+<button type="button" id="btnEliminar">Eliminar</button>
+
+
+<div id="tabla"> </div>
+	
+
+
+
+<h1 style="color:#FF0000" id="mnMarca"><i>Menu registro de marca</i></h1>
+
+	<label  id="lbNombre" for="nombre">Nombre:</label>
+<input type="text"id="nombre" name="nombre">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<!---
+<button type="button" id="btnAgregar2">Agregar</button>
+<button type="button" id="btnActualizar2">Actualizar</button>
+<button type="button" id="btnEliminar2">Eliminar</button>
+
+
+-->
+</body>
+
+</html>
